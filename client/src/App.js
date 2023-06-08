@@ -1,13 +1,11 @@
 import './App.css';
-import AllRoutes from "./AllRoutes/AllRoutes"
-
-
+import Filter from './Components/Filter';
+import ProductPage from './Pages/ProductPages';
 
 function App() {
   return (
-    <div>
-      <AllRoutes/>
-
+    <div className="App">
+    <ProductPage/>
     </div>
   );
 }
