@@ -1,6 +1,6 @@
 import { SimpleGrid } from "@chakra-ui/react";
 import { useState } from "react";
-import ProductData from "../Data/ProductData";
+import ProductData from "./ProductData";
 import Card from "./ProductCart";
 import Filter from "./Filter";
 
@@ -18,7 +18,7 @@ export default function ProductList() {
     <>
       <Filter HandelClick={HandelClick} />
       <SimpleGrid
-        padding={"20px"}
+        padding={"15px"}
         columns={[1, 3, 3, 4]}
         justifyContent={"space-evenly"}
         spacing={"40px"}

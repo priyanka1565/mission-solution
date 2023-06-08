@@ -1,27 +1,22 @@
-import { Box, Image, Text } from "@chakra-ui/react";
-
+import { Box, Image, Text } from "@chakra-ui/react"; 
+import "./ProductCart.css"
 export default function Card(Props) {
   console.log("prop", Props);
-  const { id, productImg, category, description, Price } = Props.Props;
+  const { id, image,title, category,  price } = Props.Props;
   return (
-    <Box textAlign={"left"} padding={"10px"} key={{ id }}>
-      <Image h={"380px"} src={productImg} borderRadius={"10px"} />
+    <div className="Product_main_div" key={{ id }}>
+      <div className="main_div">
+      <Image h={"200px"} src={image} borderRadius={"10px"} />
       <br />
-      <Text maxWidth={"280px"} fontWeight={"500"}>
-        {description}
-      </Text>
-      <Text fontWeight={"500"}>Price : ₹ {Price}</Text>
-      <Box
-        borderRadius={"5px"}
-        margin={"left"}
-        maxWidth={"180px"}
-        fontWeight={"700"}
-        bgColor={"RGBA(0, 0, 0, 0.48)"}
-        color={"white"}
-        textAlign={"center"}
+      <h4 maxWidth={"200px"} fontWeight={"500"}>
+        {title}
+      </h4>
+      <h5 fontWeight={"500"}>price : ₹ {price}</h5>
+      <p
       >
         {category}
-      </Box>
-    </Box>
+      </p>
+      </div>
+    </div>
   );
 }

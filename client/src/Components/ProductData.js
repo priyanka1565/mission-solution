@@ -51,16 +51,7 @@ const ProductData = [
     image: "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg",
     rating: { rate: 4.6, count: 400 },
   },
-  {
-    id: 6,
-    title: "Solid Gold Petite Micropave ",
-    price: 168,
-    description:
-      "Satisfaction Guaranteed. Return or exchange any order within 30 days.Designed and sold by Hafeez Center in the United States. Satisfaction Guaranteed. Return or exchange any order within 30 days.",
-    category: "jewelery",
-    image: "https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg",
-    rating: { rate: 3.9, count: 70 },
-  },
+  
   {
     id: 7,
     title: "White Gold Plated Princess",
@@ -206,4 +197,4 @@ const ProductData = [
     rating: { rate: 3.6, count: 145 },
   },
 ];
- module.exports = ProductData;
+export default ProductData;
