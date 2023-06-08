@@ -22,7 +22,9 @@ export default function Filter({HandelClick}) {
 
     return (
       <>
-        <Button onClick={onOpen}>Add Filters</Button>
+        <Button onClick={onOpen} border={"2px solid teal"}>
+          Apply Filters
+        </Button>
         <Modal
           initialFocusRef={initialRef}
           finalFocusRef={finalRef}
@@ -30,10 +32,10 @@ export default function Filter({HandelClick}) {
           onClose={onClose}
         >
           <ModalOverlay />
-          <ModalContent w={"90%"} >
-            <ModalHeader>Make Filters</ModalHeader>
+          <ModalContent w={"90%"}>
+            <ModalHeader>Apply Filters</ModalHeader>
             <ModalCloseButton />
-            <ModalBody pb={6}>
+            <ModalBody pb={3}>
               <FormControl>
                 <FormLabel>Category</FormLabel>
                 <Select
@@ -63,13 +65,20 @@ export default function Filter({HandelClick}) {
 
             <ModalFooter>
               <Button
-                colorScheme="blue"
+                colorScheme="green"
+                border={"2px solid teal"}
                 mr={3}
                 onClick={() => HandelClick(category, price)}
               >
                 Filter
               </Button>
-              <Button onClick={onClose}>Cancel</Button>
+              <Button
+                onClick={onClose}
+                colorScheme="red"
+                border={"2px solid teal"}
+              >
+                Cancel
+              </Button>
             </ModalFooter>
           </ModalContent>
         </Modal>
