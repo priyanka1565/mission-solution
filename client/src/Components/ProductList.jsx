@@ -10,20 +10,20 @@ export default function ProductList() {
   const [AppendData, setAppendData] = useState(Mydata);
 
   function HandelClick(category, price) {
-    let FilteredData 
-    // filter according to price 
+    let FilteredData;
+    // filter according to price
     if (price) {
       FilteredData = Mydata.filter((elem) => elem?.Price == price);
     }
-    // filter according to category 
+    // filter according to category
     if (category) {
       FilteredData = Mydata.filter((elem) => elem?.category == category);
     }
     // filter according to both price and category
     if (price && category) {
-       FilteredData = Mydata.filter(
-         (elem) => elem?.Price == price && elem?.category == category
-       );
+      FilteredData = Mydata.filter(
+        (elem) => elem?.Price == price && elem?.category == category
+      );
     }
     // console.log(FilteredData);
     setAppendData(FilteredData);

@@ -1,6 +1,7 @@
 {
   "name": "client",
   "version": "0.1.0",
+  "author":"priyanka ingle",
   "private": true,
   "dependencies": {
     "@chakra-ui/react": "^2.7.0",
