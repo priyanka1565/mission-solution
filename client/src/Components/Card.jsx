@@ -1,13 +1,15 @@
 import { Box, Image, Text } from "@chakra-ui/react";
 
 export default function Card(Props) {
-  console.log("prop", Props);
+  //console.log("prop", Props);
   const { id, productImg, category, description, Price } = Props.Props;
+
+
   return (
     <Box
       className="pod"
       textAlign={"left"}
-      padding={"10px"}
+      padding={"15px"}
       key={{ id }}
       border={"2px solid lightgray"}
       borderColor={"teal"}
@@ -27,9 +29,13 @@ export default function Card(Props) {
         bgColor={"tomato"}
         color={"white"}
         textAlign={"center"}
+        marginBottom={"15px"}
+        
       >
         {category}
       </Box>
+     
+
     </Box>
   );
 }
